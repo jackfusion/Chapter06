@@ -5,6 +5,6 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../PacktLibrary/PacktLibrary.csproj" />
-  </ItemGroup>
+      <ProjectReference Include="../PacktLibrary/PacktLibrary.csproj" />
+    </ItemGroup>
 </Project>

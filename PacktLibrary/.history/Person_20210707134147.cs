@@ -56,7 +56,7 @@ namespace Packt.Shared
         }
 
         // event delegate field
-        public event EventHandler Shout;
+        public EventHandler Shout;
         //data field
         public int AngerLevel;
         // method

@@ -39,13 +39,13 @@ namespace PeopleApp
                 new Person { Name = "Richard" }
             };
 
-            WriteLine("Initial list of people: ");
+            WriteLine("Initial list of people:");
             foreach (var person in people)
             {
                 WriteLine($"{person.Name}");
             }
 
-            WriteLine("Use Person's IComparable implementation to sort: ");
+            WriteLine("Use Person's IComparable implementation to sort:");
             Array.Sort(people);
             foreach (var person in people)
             {

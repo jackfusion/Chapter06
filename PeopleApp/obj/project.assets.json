@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "PacktLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PacktLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacktLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PacktLibrary/1.0.0": {
+      "type": "project",
+      "path": "../PacktLibrary/PacktLibrary.csproj",
+      "msbuildProject": "../PacktLibrary/PacktLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "PacktLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kende\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\c#\\Chapter06\\PacktLibrary\\PacktLibrary.csproj": {
+              "projectPath": "D:\\Development\\c#\\Chapter06\\PacktLibrary\\PacktLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -25,32 +25,11 @@ namespace PeopleApp
                 arg0: harry.Name,
                 arg1: harry.Children[0].Name);
             WriteLine($"5! is {Person.Factorial(5)}");
-            harry.Shout += Harry_Shout;
+            harry.Shout = Harry_Shout;
             harry.Poke();
             harry.Poke();
             harry.Poke();
             harry.Poke();
-
-            Person[] people =
-            {
-                new Person { Name = "Simon" },
-                new Person { Name = "Jenny" },
-                new Person { Name = "Adam" },
-                new Person { Name = "Richard" }
-            };
-
-            WriteLine("Initial list of people: ");
-            foreach (var person in people)
-            {
-                WriteLine($"{person.Name}");
-            }
-
-            WriteLine("Use Person's IComparable implementation to sort: ");
-            Array.Sort(people);
-            foreach (var person in people)
-            {
-                WriteLine($"{person.Name}");
-            }
         }
         private static void Harry_Shout(object sender, EventArgs e)
         {

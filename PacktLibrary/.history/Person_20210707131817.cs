@@ -56,22 +56,8 @@ namespace Packt.Shared
         }
 
         // event delegate field
-        public event EventHandler Shout;
+        public EventHandler Shout;
         //data field
-        public int AngerLevel;
-        // method
-        public void Poke()
-        {
-            AngerLevel++;
-            if (AngerLevel >= 3)
-            {
-                // if something is listening...
-                if (Shout != null)
-                {
-                    // ...then call the delegate
-                    Shout(this, EventArgs.Empty);
-                }
-            }
-        }
+        public int Anger
     }
 }
