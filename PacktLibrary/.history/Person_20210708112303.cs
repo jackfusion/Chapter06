@@ -72,11 +72,11 @@ namespace Packt.Shared
                     Shout(this, EventArgs.Empty);
                 }
             }
-            
         }
+
         public int CompareTo(Person other)
         {
-            return Name.CompareTo(other.Name);
+            throw new NotImplementedException();
         }
     }
 }
